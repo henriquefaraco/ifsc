@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Lista 3 - Exercício 2</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="l3ex2.css">
+</head>
+<body>
+	<h1>Formulários com Banco de Dados</h1>
+
+	<!--Atributos action e method importante serem usados, sendo que o primeiro é obrigatório. Se o método não for especificado o defaul é Get-->
+	<form action="./programas-php/gti/recebe-dados.php" method="post" enctype="multipart/form-data"><!--method: get ou post || action: especifica o arquivo p/ onde o server envia os dados-->
+		<fieldset class="esquerda">
+			<legend>Banco de Dados - cadastro de informações</legend>
+
+			<label class="alinha">Código do Cliente: </label>
+			<input type="text" name="codigo-cliente"><br>
+			
+			<label class="alinha">Valor da compra (em R$):</label>
+			<input type="number" name="venda" step="0.01"><br>
+			
+			<label>Tipo de Equipamento Adquirido:</label><br>
+			<input type="radio" name="tipo-adquirido" value="impressora">Impressora <br>
+			<input type="radio" name="tipo-adquirido" value="notebook" checked>Notebook <br>
+			<input type="radio" name="tipo-adquirido" value="smartphone">Smartphone <br>
+	
+			<button class="esquerda" type="submit" name="enviar">Enviar</button>
+
+		</fieldset>
+
+		<fieldset class="direita">
+			<legend>Banco de Dados - alterações de informações</legend>
+				
+			<label class="alinha">Código do Cliente para pesquisa: </label>
+			<input type="text" name="codigo-cliente"><br>
+			
+			<label class="alinha">Retificação do Valor da compra (em R$):</label>
+			<input type="number" name="venda" step="0.01">
+			
+			<button class="direita" type="submit" name="enviar">Enviar</button>
+
+		</fieldset>
+		
+	</form>
+
+</body>
+</html>

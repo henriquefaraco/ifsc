@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Lista 3 - Exercicio 3</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="l3ex3.css">
+</head>
+<body>
+	<h1>Formulários - Publicação de Artigos</h1>
+
+	<form action="./programas-php/gti/recebe-dados.php" method="post" enctype="multipart/form-data">
+		<fieldset class="principal">
+			<legend>Artigo</legend>
+			
+			<label class="alinha">Título:</label>
+			<input type="text" name="titulo"><br>
+
+			<label class="alinha">Data da Publicação:</label>
+			<input type="date" name="data-publica"><br>
+
+			<label class="alinha">Palavras-Chave do artigo:</label>
+			<textarea class="alinha-vertical" name="sugestoes"></textarea><br>
+
+			<label class="alinha">Enviar Arquivo (formato .pdf, máximo de 50kb)</label>
+			<input type="file" name="documentos" multiple>
+
+		</fieldset>
+
+		<button type="submit" name="enviar">Enviar Artigo</button>
+	</form>
+
+</body>
+</html>
