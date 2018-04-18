@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu|Lobster');
+
+body{
+	margin: 0;
+	font-family: Ubuntu;
+}
+h1{
+	margin: 0;
+	text-align: center;
+	width: 100%;
+	border-bottom: 1px solid #000;
+	box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+	margin-bottom: 30px;
+	background: #eff3f8;
+	
+}
+form{
+	width: 80%;
+	margin: auto;
+}
+fieldset{
+	background: #eff3f8;
+	border: 1px solid black;
+	height: 250px;
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+	width: 45%;
+}
+.direita{
+	display: block;
+	float: right;
+}
+.esquerda{
+	display: block;
+	float: left;
+}
+label.alinha{
+	text-align: right;
+	margin-bottom: 15px;
+	width: 300px;
+	display: inline-block; /*esse elemento herda o melhor do inline com o melhor do block*/
+	padding-right: 5px;
+}
+button{
+	width: 45%;
+	height: 50px;
+	border: 1px solid black;
+	background: #eff3f8;
+}
+button.esquerda{
+	position: absolute;
+	top: 265px;
+	width: 15%;
+	margin: 20px;
+}
+button.direita{
+	position: absolute;
+	top: 265px;
+	width: 15%;
+	margin:20px;
+}
+
+fieldset{
+	padding-top: 20px;
+	
+
+}
