@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body{
+	margin: 0px;
+	font-family: Montserrat;
+}
+h1{
+	text-align: center;
+	box-shadow: 5px 5px 5px 5px;
+	margin-top: 0px;
+}
+div.borda{
+	border: 1px solid black;
+	width: 25%;
+	display: block;
+	margin: auto;
+	background-image: url("fundo.png");
+
+}
+ol#troca-marcador{
+	list-style-type: upper-latin;
+}
+img{
+	float: right;
+	margin-left: 30px;
+}
+p.justificado{
+	text-align: justify;
+}
+p.azul{
+	color: blue;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+	font-weight: bold;
+
+}
+

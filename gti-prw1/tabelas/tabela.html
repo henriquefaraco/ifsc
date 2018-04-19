@@ -1,0 +1,80 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+<head> 
+	<meta charset="utf-8"> 
+	<title> Utilizando tabelas com HTML5  </title>
+	<link rel="stylesheet" type="text/css" href="tabela.css">
+</head> 
+
+<body> 
+	<h1>Tabela simples com html e CSS3</h1><br>
+	
+	<table>
+		<caption>Semestre 2018/1 - Rendimento dos Alunos do IFSC - GTI 3ª Fase</caption><!--A legenda tem q vir aqui obrigatoriamente-->
+		<tr>
+			<th>Aluno</th>
+			<th>Unidade Curricular</th>
+			<th>Média Final</th>
+		</tr>
+		<tr>
+			<td>Ana</td>
+			<td>Redes</td>
+			<td>8,0</td>
+		</tr>
+		<tr>
+			<td>Maria</td>
+			<td>PRW1</td>
+			<td>7,5</td>
+		</tr>
+		<tr>
+			<td>Ana</td>
+			<td>SI</td>
+			<td>4,0</td>
+		</tr>
+		<tr>
+			<td>Joaquim</td>
+			<td>Lógica</td>
+			<td>9,5</td>
+		</tr>
+	</table>
+
+	<table class="avancada">
+		<caption>Orçamento mensal - balanço</caption>
+		<tr>
+			<th>Tipo de Despesa</th>
+			<th>Descrição</th>
+			<th>Valor (em R$)</th>
+		</tr>
+		<tr>
+			<td rowspan="3">Doméstica</td>
+			<td>Compras do mês</td>
+			<td>900,00</td>
+		</tr>
+		<tr>
+			<td>Aluguel</td>
+			<td>1100,00</td>
+		</tr>
+		<tr>
+			<td>Luz</td>
+			<td>250,00</td>
+		</tr>
+		<tr>
+			<td>Pensão Alimentícia</td>
+			<td rowspan="2" colspan="2">Sem registros até o momento</td>
+		</tr>
+		<tr>
+			<td>Judicial</td>
+		</tr>
+		<tr>
+			<td>Viagem</td>
+			<td>Mestrado</td>
+			<td>4750,00</td>
+		</tr>
+		<tr>
+			<td colspan="2">Total</td>
+			<td>7000,00</td>
+		</tr>
+	</table>
+		
+</body> 
+</html> 

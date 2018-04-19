@@ -1,0 +1,52 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+<head> 
+	<meta charset="utf-8"> 
+	<title> Utilizando tabelas com HTML5  </title>
+	<link rel="stylesheet" type="text/css" href="tabelacomplexa.css">
+</head> 
+
+<body> 
+	<h1>Tabela complexa com html e CSS3</h1><br>
+	
+
+	<table>
+		<caption>Orçamento mensal - balanço</caption>
+		<tr>
+			<th>Tipo de Despesa</th>
+			<th>Descrição</th>
+			<th>Valor (em R$)</th>
+		</tr>
+		<tr>
+			<td rowspan="3">Doméstica</td>
+			<td>Compras do mês</td>
+			<td>900,00</td>
+		</tr>
+		<tr>
+			<td>Aluguel</td>
+			<td>1100,00</td>
+		</tr>
+		<tr>
+			<td>Luz</td>
+			<td>250,00</td>
+		</tr>
+		<tr>
+			<td>Pensão Alimentícia</td>
+			<td rowspan="2" colspan="2" class="alinha-texto-centro">Sem registros até o momento</td>
+		</tr>
+		<tr>
+			<td>Judicial</td>
+		</tr>
+		<tr>
+			<td>Viagem</td>
+			<td>Mestrado</td>
+			<td>4750,00</td>
+		</tr>
+		<tr>
+			<th colspan="2" class="alinha-texto-direita">Total</th>
+			<td>7000,00</td>
+		</tr>
+	</table>
+		
+</body> 
+</html> 

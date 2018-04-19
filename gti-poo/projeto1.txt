@@ -1,0 +1,99 @@
+===== Main =====
+
+package projeto1;
+//Também referenciada como sendo Lista8
+
+import java.util.Scanner;
+
+
+public class Projeto1 {
+
+    public static void main(String[] args) {
+        
+        Aluno aluno1 = new Aluno();
+        
+        //receber os dados do console
+        Scanner teclado = new Scanner(System.in);
+        System.out.print("Forneça o nome do aluno: ");
+        String nome1 = teclado.nextLine();
+        
+        System.out.println("Forneça a primeira nota: ");
+        double nota1 = teclado.nextDouble();
+        
+        System.out.println("Forneça a segunda nota: ");
+        double nota2 = teclado.nextDouble();
+        
+        //alterando o estado do objeto aluno1
+        aluno1.setNome(nome1);
+        aluno1.setNota1(nota1);
+        aluno1.setNota2(nota2);
+        
+        double media = aluno1.calculaMedia();
+        
+        System.out.println("A média do aluno é : "+media);
+        
+        //Criar outro objeto do tipo Aluno usando o método personalizado
+        Aluno aluno2 = new Aluno("João", 6, 7.8);
+        
+        //Acessar os dados do aluno2 usando get
+        
+        media = aluno2.calculaMedia();
+        
+        System.out.println("Nome: "+aluno2.getNome());
+        System.out.println("Nota 1: "+aluno2.getNota1());
+        System.out.println("Nota 2: "+aluno2.getNota2());
+        System.out.println("Média: "+media);
+            
+        }
+    
+       
+}
+
+==== auxiliar ====
+
+package projeto1;
+
+
+public class Aluno {
+    private String nome;
+    private double nota1, nota2;
+    
+    //construtores da classe
+    public Aluno(){
+        nome = "Pedro de Almeida";
+        nota1 = 8.5f;
+        nota2 = 6.4f;
+    }
+    public Aluno(String aluno, double n1, double n2){
+        nome = aluno;
+        nota1 = n1;
+        nota2 = n2;
+    }
+    //definem os métodos getter e setters - Como nome e notas são privates, não poderão ser modificados de fora sem get e set
+    public void setNome(String aluno){
+        nome = aluno;
+    }
+    public void setNota1(double n1){
+        nota1 = n1;
+    }
+    public void setNota2 (double n2){
+        nota2 = n2;
+    }
+    public String getNome(){
+        return nome;
+    }
+    public double getNota1(){
+        return nota1;
+    }
+    public double getNota2(){
+        return nota2;
+    }
+    //criando um método para calcular a média 
+    public double calculaMedia(){
+        return (nota1+nota2)/2.0;
+        
+    }
+
+   
+}
+

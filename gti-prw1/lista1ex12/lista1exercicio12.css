@@ -1,0 +1,46 @@
+body{
+	margin: 0px;
+	font-size: 2em;
+	font-family: calibri;
+}
+
+p{
+	font-size: 120%;
+	color: blue;
+	margin-bottom: 5%;
+}
+.fonte-vermelha{
+	color: red;
+}
+.fonte-obliqua{
+	font-style: oblique;
+}
+.margem-superior{
+	display: block;
+	margin-top: 80px;
+}
+.margem-esquerda{
+	margin-left: 3em;
+}
+.fonte-cortada{
+	text-decoration: line-through;
+}
+h1{
+	border: 5px solid brown;
+	margin-bottom: 5%;
+}
+h1#borda-10px{
+	border: 10px solid brown;
+}
+.centralizado{
+	text-align: center;
+}
+.borda-de-lista{
+	border: 1px solid black;
+}
+a{
+	margin-bottom: 5%;
+}
+ul{
+	margin-bottom: 5%;
+}

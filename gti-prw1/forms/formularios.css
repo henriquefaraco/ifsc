@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu|Lobster');
+
+body{
+	margin: 0;
+	font-family: Ubuntu;
+}
+h1{
+	margin: 0;
+	text-align: center;
+	width: 100%;
+	border-bottom: 1px solid #000;
+	box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+	margin-bottom: 30px;
+	background: #eff3f8;
+	text-shadow: -1px 1px rgba(255, 255, 255, 0.6), -2px 1px 1px rgba(0,0,0,0.6);
+}
+label.alinha{
+	text-align: right;
+	margin-bottom: 15px;
+	width: 200px;
+	display: inline-block; /*esse elemento herda o melhor do inline com o melhor do block*/
+	padding-right: 5px;
+}
+/*Aumentar o tamanho das caixas do nome e do email, usando 'seletores de atributos' avançados do CSS*/
+
+input[name="nome-do-cliente"], input[type="email"]{
+	width: 350px;
+
+}
+/*
+input[name*="nome"]{ } ----- vai aplicar para todo atributo name que esteja dentro da tag input e contenha a string nome
+input[name^="nome"]{ } ----- vai aplicar para todo atributo name que esteja dentro da tag input e que comece com a string nome
+input[name~="nome"]{ } ----- vai aplicar para todo atributo name que esteja dentro da tag input e acabe com a string nome
+input[name^="nome"]{ } ----- vai aplicar para todo atributo name que esteja dentro da tag input e contenha a palavra nome
+*/
+input[type="text"], input[type="date"], input[type="email"], input[type="number"], select, textarea{
+	font-family: Lobster;
+	font-size: 15px;
+}
+/*Aplicando formatação quando o usuário dispara o estado focus sobre as caixas do formulário*/
+
+input[type="text"]:focus, input[type="date"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, select:focus, textarea:focus{
+	box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+	/*Desabilitando a borda que o chrome usa*/
+	outline: none;
+}
+fieldset{
+	width: 45%;
+	border: 1px solid #000;
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+	background: rgba(0,0,0,0.1);
+	padding: 20px;
+	height: 380px;
+}
+fieldset.esquerda{
+	float: left;
+	margin: 15px;
+}
+fieldset.direita{
+	float: right;
+	margin: 15px;
+}
+textarea{
+	resize: none;
+	width: 200px;
+}
+div.botoes{
+	clear: both; /*Impede que a div suba e fique no meio dos dois fieldsets quando houver espaço*/
+	text-align: center;
+}
+/*formatar os botões*/
+button{
+	height: 40px;
+	width: 200px;
+	font-family: Ubuntu;
+	font-size: 17px;
+	font-weight: bold;
+}
+

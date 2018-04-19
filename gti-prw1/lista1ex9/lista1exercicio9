@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercicio 9 da Lista 1</title>	
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="lista1exercicio9.css">
+</head>
+
+<body>
+
+	<h1>Exercício 9 da Lista L1</h1>
+
+	<p>9a. Dois elementos inline e um elemento em nive de bloco</p><br>
+	<p>9b. Estilizar altura e largura dos elementos em 9a</p><br>
+	<p>9c. Bordas estilizadas para os elementos em 9a. Usar cor, espessura e estilo. Usar borda arredondada e sombra em todos</p><br>
+	<p>9d. Elementos do 9a com preenhcimento direito em 50px</p><br>
+	<p>9e. Margens superior e inferior de 9a com 150px</p><br>
+			<div class="inline">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div><br>
+			<div class="inline">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div><br>
+			<div class="bloco">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div><br>
+	<p>9f. transoforme um elemento em nivel de bloco inline</p><br><!--Se eu simplesmente transformar, eu perco o anterior e o professor não tem como saber se eu fiz certo. Por isso eu criei um elemento novo-->
+			<div class="inline-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div><br>
+
+	<p>9g. transforme um elemento em nivel de bloco</p><!--Se eu simplesmente transformar, eu perco o anterior e o professor não tem como saber se eu fiz certo. Por isso eu criei um elemento novo-->
+			<div class="bloco-padding">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div><br>	
+	
+	<p>9h. Use declaração abreviada para dar padding de 20px ao ultimo elemento</p><br>
+	<p>9i. Afastar o penultimo elemento daquele que está acima dele em 30px e da margem esquerda da pag em 50px</p>
+
+
+</body>
+</html>

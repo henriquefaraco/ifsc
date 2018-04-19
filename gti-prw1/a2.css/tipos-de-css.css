@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Saira+Condensed');
+
+body{
+	font-family: "Saira Condensend";
+}
+
+p{
+	font-family: Oswald;
+	border: 5px solid red;
+	color: yellow;
+
+}

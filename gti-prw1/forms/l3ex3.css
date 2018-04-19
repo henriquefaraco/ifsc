@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu|Lobster');
+
+body{
+	margin: 0;
+	font-family: Ubuntu;
+	font-size: 20px;
+}
+h1{
+	margin: 0;
+	text-align: center;
+	width: 100%;
+	border-bottom: 1px solid #000;
+	box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+	margin-bottom: 30px;
+	background: #eff3f8;
+	
+}
+form{
+	width: 100%;
+	margin: auto;
+}
+fieldset{
+	background: #eff3f8;
+	border: 1px solid black;
+	height: 220px;
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+	width: 50%;
+	margin: auto;
+}
+label.alinha{
+	text-align: right;
+	margin-bottom: 15px;
+	width: 450px;
+	display: inline-block;
+	padding-right: 5px;
+}
+button{
+	display: block;
+	margin: auto;
+	width: 250px;
+	margin-top: 20px;
+	height: 50px;
+	border: 1px solid black;
+	background: #eff3f8;
+	font-family: Ubuntu;
+	font-size: 20px;
+}
+.alinha-vertical{
+	display: table-cell;
+	vertical-align: top;
+	margin-left: 5px;
+	margin-bottom: 15px;
+
+}

@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body{
+	margin: 0;
+}
+/*Dois primeiros elementos configurados com a classe inline para ficarem configurados dessa forma*/
+.inline{
+	display: inline;
+}
+/*Elemento configurado com a classe bloco para ficarem configurados dessa forma*/
+.bloco{
+	display: block;
+}
+/*Elemento transformado/configurado com a classe inline-block para ficar configurado dessa forma*/
+.inline-block{
+	display: inline-block;
+	margin-left: 50px;/*maargem externa do elemento, à esquerda*/
+	margin-top: 30px;/*maargem externa do elemento, acima*/
+}
+/*Elemento transformado/configurado com a classe bloco-padding para ficar configurado dessa forma*/
+.bloco-padding{
+	padding: 20px; /*margem interna do elemento*/
+	display: block;
+}
+/*Configurações comuns a todos elementos do tipo div*/
+div{
+	height: 100px;/*altura*/
+	width: 70%;/*largura*/
+	border: 3px dashed red;/*borda tracejada de 2px e vermelha*/
+	border-radius: 20px;/*borda arredondada*/
+	box-shadow: 2px 2px gray;/*sombreamento da borda*/
+	padding-right: 250px /*Não entendi o que o professor quis dizer com preenchimento direito em 50px e decidi que seria espaçamento interno*/
+	margin-top: 150px;/*margem externa da parte de cima*/
+	margin-bottom: 150px;/*margem externa da parte de baixo*/	
+}

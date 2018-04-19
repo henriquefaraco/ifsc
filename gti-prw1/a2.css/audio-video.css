@@ -1,0 +1,21 @@
+h1{
+	background-color: red;
+	text-align: center;
+	width: 50%;
+}
+body{
+	background-color: gray;
+}
+p{
+	background-color: black;
+	color: white;
+	width: 50%;
+	text-align: center;
+
+}
+audio{
+	align-content: center;
+}
+video{
+	width: 40%;
+}

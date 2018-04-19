@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Introdução aos formulários</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="formularios.css">
+</head>
+<body>
+	<h1>Modelo de formularios com HTML5 e CSS</h1>
+
+	<!--Atributos action e method importante serem usados, sendo que o primeiro é obrigatório. Se o método não for especificado o defaul é Get-->
+	<form action="./programas-php/gti/recebe-dados.php" method="post" enctype="multipart/form-data"><!--method: get ou post || action: especifica o arquivo p/ onde o server envia os dados-->
+		<fieldset class="esquerda">
+			<legend>Dados Pessoais</legend>	
+			<label class="alinha">Forneça seu nome: </label>
+			<input type="text" name="nome-do-cliente" placeholder="Seu nome aqui..." autofocus><br> <!--o atributo 'name' é obrigatório p os elementos q recebem dados-->
+			<label class="alinha" for="x">Forneça o seu e-mail</label>
+			<input type="email" name="email-do-cliente" placeholder="Seu e-mail aqui" required id="x"> <!--o atributo 'name' é obrigatório p os elementos q recebem dados-->
+			<label class="obrigatorio">*</label><br>
+			<label class="alinha">Data de ingresso no CST-GTI</label>
+			<input type="date" name="data-ingresso-cliente"><br> <!--o atributo 'name' é obrigatório p os elementos q recebem dados-->
+			<label class="alinha">Forneça um login:</label>
+			<input type="text" name="login"><br> <!--o atributo 'name' é obrigatório p os elementos q recebem dados-->
+			<label class="alinha">Senha</label>
+			<input type="password" name="senha"><br>
+			<label class="alinha">Forneça sua renda média</label>
+			<input type="number" name="renda" min="0" max="15000" step="0.01" required><!--o atributo 'step' determina o passo mínimo para incremento/decremento. Usar any p quantidade qualquer de casas decimais-->
+			<label class="obrigatorio">*</label><br>
+			<input type="hidden" name="MAX_FILE_SIZE" value="2048">
+			<label class="alinha">Enviar documentos em pdf</label>
+			<input type="file" name="documentos" multiple><!--O atributo 'multiple' permite upload de mais de um arquivo ao mesmo tempo-->
+		</fieldset>
+
+		<fieldset class="direita">
+			<legend>Outras Informações</legend><br>
+				<label>Oriundo de:</label><br>
+				<input type="radio" name="tipo-ensino" value="Ensino Particular" checked>Escola Particular <br><!--selecionado como checked já vem marcado-->
+				<input type="radio" name="tipo-ensino" value="Ensino Público">Escola Pública <br><br> <!--O 'radio' precisa q todos seus elementos tenham mesmo 'name'-->
+				<label>Tipos de documentos enviados: </label><br>
+				<input type="checkbox" name="tipos-arquivos[]" value="pdf">Documentos em pdf <br><!--O atributo 'name' precisa ser marcado com [] para q funcione-->
+				<input type="checkbox" name="tipos-arquivos[]" value="doc">Documentos do Word <br>
+				<input type="checkbox" name="tipos-arquivos[]" value="nenhum" checked>Nenhum arquivo enviado <br><br><!--selecionado como checked já vem marcado-->
+				<label>Opçoes de curso</label><br>
+				<select name="cursos">
+					<option value="GTI">Curso Superior GTI</option>
+					<option value="Radiologia">Curso Superior Radiologia</option>
+					<option value="informatica" selected>Curso Técnico em informática</option>
+				</select><br><br>
+				<label>Deixe aqui suas sugestões</label><br>
+				<textarea name="sugestoes">Não seja mal educado</textarea><br>
+		</fieldset>
+		<div class="botoes">
+			<button type="reset" name="limpar">Limpar</button>
+			<button type="button" name="chamar-javascript" onclick="alert('Olá mundo do JavaScript');">Executar JavaScript</button><!--Exemplo JS clientside-->
+			<button type="submit" name="enviar">Enviar</button>
+		</div>
+	</form>
+
+</body>
+</html>

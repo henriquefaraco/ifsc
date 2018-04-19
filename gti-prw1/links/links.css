@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Oswald|Inconsolata');
+
+body{
+	margin: 0;
+	font-family: Lobster;
+}
+
+h1{
+	margin: 0;
+	text-align: center;
+	border: 1px solid #000;
+	box-shadow:	0 0 5px rgba(100, 100, 100, 1);
+
+}
+
+div.corpo {
+	width: 95%;
+	margin: 30px auto;
+}
+
+/*Formatação de links*/
+
+a{
+	text-decoration: none; /*tirando o sublinhado dos links*/
+	color: #000;
+	font-weight: bold;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding-right: 30px;
+	font-family: Oswald;
+}
+/*Estado Hover ocorre quando o usuário desloca o cursor sobre o link sem clicar*/
+a:hover{
+	color: red;
+	text-decoration: underline;
+	background: rgba(80, 80, 80, 1);
+}
+/*Aplicando um ícone de fundo ao link remdoto*/
+a.remoto{
+	background-image: url(https://images.cdn2.stockunlimited.net/preview1300/external-link-url-icon_1402112.jpg);
+	background-size: 25px 25px;
+	background-repeat: no-repeat;
+	background-position: right center;
+
+}
+img{
+	width: 5%;
+
+}
+a.sem-hover:hover{
+	background: none;
+}
