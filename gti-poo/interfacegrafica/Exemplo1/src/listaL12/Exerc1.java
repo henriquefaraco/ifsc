@@ -1,10 +1,10 @@
 
-package exemplo1;
+package listaL12;
 
 import java.awt.*;
 import javax.swing.*;
 
-public class Exemplo1 {
+public class Exerc1 {
 
     public static void main(String[] args) {
         
