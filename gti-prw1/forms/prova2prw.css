@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+body{
+	font-family: Ubuntu;/*(A)Fonte alterada para toda a página*/
+	margin: 0px;
+}
+h1{
+	margin: auto; /*(D)Junto com o width centraliza o elemento e cola as bordas nas laterais e topo*/
+	width: 100%;
+	margin-bottom: 30px;
+	text-align: center;
+	border: 1px solid #000;/*(C)Borda qualquer para o cabeçalho*/
+	background: #eff3f8; /*(B)Cor de fundo para o cabeçalho*/
+	
+}
+fieldset.escolhas{
+	margin: auto;/*(F) Esse elemento junto com o width centraliza o formulário na página*/
+	width: 600px;
+	box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);/*(E)sombra ao redor dos quatro lados do formulários*/
+	border: 1px solid black;/*(G) Borda ao redor do formulário*/
+	background-image: url("prova2.png");/*(H)Imagem de fundo para o fieldset*/
+	padding: 20px;/*(L)Afastando o conteúdo das bordas internas do formulário em 20px*/
+}
+fieldset.cadastro{/*(EXTRA)O prof não pediu mas eu precisei configurar pra ficar parecido com o modelo*/
+	background: #eff3f8;
+	width: 80%;
+	margin: auto;
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+	border: 1px solid black;
+}
+label.alinha{/*(I)Toda as configurações são para alinhar as labels às caixas de texto*/
+	text-align: right;
+	margin-bottom: 15px;
+	width: 200px;
+	display: inline-block;
+	padding-right: 5px;
+	margin: 10px;/*(J)Separando o label de seus vizinhos*/
+}
+/*(K)Usando seletor de atributos para mudar o tamanho do campo do Nome completo*/
+[name="nome"]{
+	width: 230px;
+}
+button{
+	display: inline-block;
+	width: 200px;/*(N)Aumentando a largura do botão*/
+	height: 50px;/*(N)Aumentando a altura do botão*/
+	margin-top: 20px;/*(M)Afastando o submit dos elementos acima dele em 20px*/ 
+	font-size: 20px;/*(O)Aumentando a fonte*/
+	font-weight: bold;/*(O)negrito*/
+}

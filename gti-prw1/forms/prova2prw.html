@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Prova 2 - Programação Web</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="prova2prw.css">
+</head>
+<body>
+	<h1>Formulários com HTML5 + CSS3.0</h1>
+
+	<form action="./programas-php/gti/recebe-dados.php" method="post" enctype="multipart/form-data">
+		
+		<fieldset class="escolhas">
+			<fieldset class="cadastro">
+				<legend>Cadastre-se em nossos cursos online</legend>
+				
+				<label class="alinha">Nome Completo:</label>
+				<input type="text" name="nome" placeholder="Seu nome aqui..." autofocus><br>
+				
+				<label class="alinha">Login:</label>
+				<input type="text" name="login"><br>
+
+				<label class="alinha">Senha:</label>
+				<input type="password" name="senha"><br>
+
+			</fieldset>
+	
+			<br>
+			<label>Você prefere tutoriais ligados a que assunto?</label><br>
+			<input type="radio" name="tutorial" value="html">HTML <br>
+			<input type="radio" name="tutorial" value="php">PHP <br>		
+			<input type="radio" name="tutorial" value="ajax" checked>AJAX <br>		
+
+			<br>
+			<label class="alinha">De qual forum quer participar?</label>
+			<select name="forum">
+				<option value="pr-java" selected>Programação Java</option>
+				<option value="pr-php">PHP</option>
+				<option value="pr-c">C++</option>
+			</select><br>
+			<button type="submit" name="cadastrar">Cadastrar</button>
+		</fieldset>
+
+	</form>
+
+</body>
+</html>
