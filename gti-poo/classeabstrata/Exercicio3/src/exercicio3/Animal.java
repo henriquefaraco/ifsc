@@ -3,10 +3,10 @@ package exercicio3;
 
 public abstract class Animal {
 
-    public String nome;
-    public String nomeCientifico;
-    public String habitat;
-    public int numPatas;
+    private String nome;
+    private String nomeCientifico;
+    private String habitat;
+    private int numPatas;
     
     public abstract void emitirSom();
     
