@@ -42,3 +42,44 @@ select descricao, char_length(descricao) from produtos;
 
 -- F. Juntar o codigo com a data de vencimento, separados por underline
 select concat(cod, "_", data_hora) from produtos;
+
+-- G. Buscar o termpo "sovaco" na descrição e trocar pelo termo "saco"
+-- Na função replace(coluna-alvo, termo-substituido, termo-novo)
+select descricao, replace(descricao, 'sovaco', 'saco') as trocar_descricao from produtos;
+
+-- H. Exibir os dados da coluna descricao com uppercase
+select descricao, upper(descricao) as maiusculo from produtos;
+
+-- I. Mostrar apenas o dia do mes da validade da coluna
+select descricao, dayofmonth(data_hora) from produtos; 
+
+-- J. Recuperar o ano em que termina a validade do produto
+select descricao, year(data_hora) from produtos;
+
+-- k. Mostra a data no formato requerido
+select descricao, date_format(data_hora, '%d/%m/%Y') from produtos;
+
+-- L. Mostar a data de validade mostrando apenas hora, minuto e segundo
+select descricao, date_format(data_hora, '%H-%i-%S') from produtos;
+
+-- M. Adicionar 2 meses a data de validade dos produtos
+select descricao, data_hora as data_antiga, date_add(data_hora, interval 2 month) as nova_data from produtos;
+
+-- N. Arredondar o preço com uma casa decimal
+select descricao, preco_venda as precoantigo, round(preco_venda, 1) as preconovo from produtos;
+
+-- O. Arredondar para o valor inteiro imediatamente inferior ao preco dado
+select descricao, preco_venda as precoantigo, floor(preco_venda) as preconovo from produtos;
+-- O2. Se fosse pra arredondar pra cima
+select descricao, preco_venda as precoantigo, ceiling(preco_venda) as preconovo from produtos;
+
+-- P. Calcular a potencia do preco de venda, elevando ao quadrado
+select descricao, preco_venda as preco, pow(preco_venda, 2) as preconovo from produtos;
+
+-- Q. contar onde o codigo for menor q 2 e a data maior do que 2015-02-10 12:12:40
+select count(*) from produtos where cod < 2 and data_hora > '2015-02-10 12:12:40';
+
+-- select 
+select sum(preco_venda) from produtos where preco_venda between 0 and 2500;
+
+select avg(preco_venda) from produtos where perecivel = true;
