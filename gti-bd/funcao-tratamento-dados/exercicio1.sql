@@ -79,7 +79,11 @@ select descricao, preco_venda as preco, pow(preco_venda, 2) as preconovo from pr
 -- Q. contar onde o codigo for menor q 2 e a data maior do que 2015-02-10 12:12:40
 select count(*) from produtos where cod < 2 and data_hora > '2015-02-10 12:12:40';
 
--- select 
+-- R. Calcular a soma dos precos de venda mas somente dos produtos que possuem preco entre 0 e 2500
 select sum(preco_venda) from produtos where preco_venda between 0 and 2500;
 
+-- S. Calcular a media do preco de venda dos produtos que sao pereciveis
 select avg(preco_venda) from produtos where perecivel = true;
+
+-- T. Recupera a descricao do produto mais caro da tabela // Aqui faz-se uma consulta dentro da outra
+select descricao from produtos where preco_venda = (select max(preco_venda) from produtos);
